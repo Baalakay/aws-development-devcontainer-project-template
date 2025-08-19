@@ -19,6 +19,7 @@
 - [M₆] **Application Stack**: Lambda functions and S3 notifications
 - [M₇] **Lambda Layer**: Bedrock service integration layer
 - [M₈] **Template Foundation**: Reusable project template ready
+- [M₉] **Template Organization**: Documentation organized in `.aws-templates/` folder
 
 ### 🔄 In Progress
 - [M₅] **Framework Documentation**: Completing project documentation

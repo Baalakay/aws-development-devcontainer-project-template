@@ -46,7 +46,14 @@ To reuse this project as a template for other AWS CDK projects:
 
 3. **Run `npm install`** to update package-lock.json
 
+4. **Verify your configuration**:
+   ```bash
+   python .aws-templates/verify_template.py
+   ```
+
 That's it! All resource naming and AWS accounts throughout the project will automatically use your new configuration.
+
+**📚 See `.aws-templates/` folder for complete customization documentation.**
 
 ## 🏗️ Architecture
 
@@ -56,7 +63,15 @@ That's it! All resource naming and AWS accounts throughout the project will auto
 
 ## 📚 Documentation
 
-See `.memory-bank/` for comprehensive project documentation and CursorRIPER framework details.
+### **Project Documentation**
+- See `.memory-bank/` for comprehensive project documentation and CursorRIPER framework details
+
+### **Template Customization**
+- **`.aws-templates/`** - Complete template documentation and tools
+  - **`TEMPLATE_SUMMARY.md`** - Template overview and benefits
+  - **`TEMPLATE_CUSTOMIZATION.md`** - Complete customization guide
+  - **`TEMPLATE_QUICK_REFERENCE.md`** - Quick reference card
+  - **`verify_template.py`** - Configuration verification script
 
 ## 🔐 Security
 

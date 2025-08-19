@@ -1,4 +1,4 @@
-- START phase template created for future AWS CDK projects# σ₄: Active Context
+# σ₄: Active Context
 *v1.0 | Created: 2024-12-19 | Updated: 2024-12-19*
 *Π: INITIALIZING | Ω: START*
 
@@ -79,3 +79,4 @@
 - Lambda functions and workflows need implementation
 - Testing and validation framework needs establishment
 - START phase template created for future AWS CDK projects
+- Template documentation organized in `.aws-templates/` folder
