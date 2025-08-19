@@ -20,9 +20,9 @@
 - **AWS CloudWatch**: Logging and monitoring
 
 ### 🔧 Development Tools
-- **uv**: Package management (preferred over pip)
+- **pip**: Package management (required for CDK)
 - **Docker**: Containerization via devcontainer
-- **LocalStack**: Local AWS emulation for testing
+
 - **AWS SAM**: Serverless Application Model for local testing
 
 ### 📊 Data Processing
@@ -31,17 +31,17 @@
 - **SageMaker Canvas**: Interactive ML demos
 
 ## 🌍 Environment Configuration
-- **Dev**: Account 750389970429, us-east-1, shorter retention, relaxed security
-- **Staging**: Account 750389970429, us-east-1, medium retention, standard security
-- **Production**: Account TBD, us-east-1, full retention, strict security
+- **Dev**: Account configurable via lib/config.py, us-east-1, shorter retention, relaxed security
+- **Staging**: Account configurable via lib/config.py, us-east-1, medium retention, standard security
+- **Production**: Account configurable via lib/config.py, us-east-1, full retention, strict security
 
 ## 🔐 Security & Compliance
 - **MFA Authentication**: Required for AWS operations
 - **Profile-based access**: "mfa-auth" profile for AWS toolkit
-- **LocalStack testing**: Required before AWS deployment
+- **AWS deployment**: Direct deployment to AWS environments
 - **Credential sharing**: Containers share host AWS credentials
 
-## 🔧 Project Configurationn- **Configurable Naming**: Project name and resource naming controlled via `lib/config.py`n- **Template Ready**: Easy to reuse for other AWS CDK projects by changing PROJECT_NAMEn- **Environment Aware**: Automatic environment-specific configurationsnn## 📁 Project Structure
+## 🔧 Project Configurationn- **Configurable Naming**: Project name and resource naming controlled via `lib/config.py`n- **Configurable Accounts**: AWS account IDs controlled via `lib/config.py`n- **Template Ready**: Easy to reuse for other AWS CDK projects by changing PROJECT_NAME and AWS_ACCOUNTSn- **Environment Aware**: Automatic environment-specific configurationsnn## 📁 Project Structure
 ```
 /
 ├── .memory-bank/          # CursorRIPER memory system

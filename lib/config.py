@@ -3,6 +3,15 @@
 
 PROJECT_NAME = "incident-extractor"
 
+# AWS Account Configuration
+# Change these values for different AWS accounts per stage
+
+AWS_ACCOUNTS = {
+    "dev": "750389970429",
+    "staging": "750389970429",
+    "prod": ""  # To be provided later
+}
+
 # Environment-specific configurations
 ENVIRONMENT_CONFIGS = {
     'dev': {

@@ -1,9 +1,6 @@
 ---
-description: MCP Filesystem integration for CursorRIPER Σ
-globs: 
-alwaysApply: true
+alwaysApply: false
 ---
-
 # CursorRIPER♦Σ Filesystem MCP Integration
 
 ## 📁 MCP Filesystem Operations

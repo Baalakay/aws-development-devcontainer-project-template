@@ -1,9 +1,6 @@
 ---
-description: MCP Services Configuration for CursorRIPER.sigma
-globs: 
-alwaysApply: true
+alwaysApply: false
 ---
-
 # CursorRIPER♦Σ MCP Services Configuration
 
 ## 🛠️ MCP Services Selection

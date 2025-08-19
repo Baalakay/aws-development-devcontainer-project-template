@@ -47,7 +47,7 @@ The application follows a two-tier stack pattern:
 - **Observability**: Comprehensive logging and monitoring
 
 ## 🔄 Lifecycle Management
-- **Development**: Local testing with LocalStack
+- **Development**: Direct AWS deployment to dev environment
 - **Validation**: Staging deployment for testing
 - **Production**: Controlled deployment with full security
 - **Maintenance**: Environment-specific retention and backup policies

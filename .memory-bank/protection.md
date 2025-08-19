@@ -15,7 +15,7 @@
 - [G₃] **Security Policies**: IAM policies and access controls
 
 ### ℹ️ INFO - CONTEXT NOTE
-- [I₁] **User Preferences**: MFA authentication, LocalStack testing, uv package management
+- [I₁] **User Preferences**: MFA authentication, AWS deployment, pip package management
 - [I₂] **Architecture Decisions**: Multi-stack CDK design pattern
 - [I₃] **Technology Choices**: Python CDK, AWS services selection
 
@@ -25,7 +25,7 @@
 
 ### 🧪 TEST - TESTING CODE
 - [T₁] **Test Framework**: Unit and integration test implementations
-- [T₂] **LocalStack Testing**: Local AWS emulation for validation
+- [T₂] **AWS Testing**: AWS deployment validation
 
 ### ⚠️ CRITICAL - BUSINESS LOGIC
 - [C₁] **Core Workflows**: Step Functions and Lambda function logic

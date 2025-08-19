@@ -19,17 +19,17 @@
 - [R₆] **MFA Authentication**: Required for all AWS operations
 - [R₇] **IAM Security**: Least-privilege access policies
 - [R₈] **Environment Security**: Progressive security hardening across stages
-- [R₉] **Local Testing**: LocalStack validation before AWS deployment
+- [R₉] **AWS Deployment**: Direct deployment to AWS environments
 
 ### 🔧 Technical Requirements
 - [R₁₀] **Python CDK**: Infrastructure as Code using Python 3.12
-- [R₁₁] **Package Management**: uv for dependency management
+- [R₁₁] **Package Management**: pip for dependency management (CDK requirement)
 - [R₁₂] **Container Support**: Docker devcontainer for development
 - [R₁₃] **Monitoring**: CloudWatch integration for observability
 
 ## 🎯 Success Criteria
 - [SC₁] Successful deployment to all three environments
-- [SC₂] LocalStack validation of all infrastructure components
+- [SC₂] AWS deployment validation of all infrastructure components
 - [SC₃] Integration testing of AI/ML workflows
 - [SC₄] Performance validation across environment stages
 - [SC₅] Security compliance verification
@@ -46,4 +46,4 @@
 3. Add Lambda function implementations
 4. Configure monitoring and alerting
 5. Implement testing framework
-6. Deploy to LocalStack for validation
+6. Deploy to AWS for validation

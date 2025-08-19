@@ -1,4 +1,4 @@
-# σ₄: Active Context
+- START phase template created for future AWS CDK projects# σ₄: Active Context
 *v1.0 | Created: 2024-12-19 | Updated: 2024-12-19*
 *Π: INITIALIZING | Ω: START*
 
@@ -39,7 +39,7 @@
 ### 📏 Active Rules
 - [CursorRIPER] Framework initialization and memory management
 - [AWS Best Practices] CDK development and deployment patterns
-- [User Preferences] MFA authentication, LocalStack testing, uv package management
+- [User Preferences] MFA authentication, AWS deployment, pip package management
 
 ## 📡 Context Status
 
@@ -69,6 +69,8 @@
 
 ## 📝 Notes
 - Project uses "incident-extractor" naming convention (configurable via lib/config.py)
+- AWS account IDs configurable via lib/config.py
 - Basic CDK structure is in place but requires completion
 - Lambda functions and workflows need implementation
 - Testing and validation framework needs establishment
+- START phase template created for future AWS CDK projects

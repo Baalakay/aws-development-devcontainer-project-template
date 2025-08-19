@@ -23,7 +23,7 @@
 ### ⏳ Pending
 - [M₇] **Infrastructure Completion**: Finish infrastructure stack implementation
 - [M₈] **Application Logic**: Implement Lambda functions and workflows
-- [M₉] **Testing Framework**: Establish LocalStack testing environment
+- [M₉] **Testing Framework**: Establish AWS deployment testing
 - [M₁₀] **Deployment Pipeline**: Complete multi-stage deployment setup
 
 ## 📊 Phase Progress
@@ -66,7 +66,7 @@
 ### Medium Term (Next 1-2 weeks)
 1. Complete application stack implementation
 2. Implement testing and validation
-3. Deploy to LocalStack for testing
+3. Deploy to AWS for testing
 
 ## 📈 Success Metrics
 - **Code Coverage**: 0% (no tests implemented)
