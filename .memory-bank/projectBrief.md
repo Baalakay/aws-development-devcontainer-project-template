@@ -21,6 +21,12 @@
 - [R₈] **Environment Security**: Progressive security hardening across stages
 - [R₉] **AWS Deployment**: Direct deployment to AWS environments
 
+### 🚨 Critical Technical Requirements
+- [R₁₄] **Bedrock Converse API**: MUST use `converse()` method, NEVER `invoke_model()`
+- [R₁₅] **Model ID**: Use Claude 3.7 Sonnet v2: `us.anthropic.claude-3-7-sonnet-20250219-v1:0`
+- [R₁₆] **System Prompts**: Format as `[{"text": "prompt"}]` for Converse API
+- [R₁₇] **API Compliance**: Follow AWS Bedrock Converse API documentation
+
 ### 🔧 Technical Requirements
 - [R₁₀] **Python CDK**: Infrastructure as Code using Python 3.12
 - [R₁₁] **Package Management**: pip for dependency management (CDK requirement)

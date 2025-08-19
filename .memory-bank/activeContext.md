@@ -41,6 +41,11 @@
 - [AWS Best Practices] CDK development and deployment patterns
 - [User Preferences] MFA authentication, AWS deployment, pip package management
 
+### 🚨 Critical Rules
+- [Bedrock API] MUST use `converse()` method, NEVER `invoke_model()`
+- [Model ID] Use Claude 3.7 Sonnet v2: `us.anthropic.claude-3-7-sonnet-20250219-v1:0`
+- [System Prompts] Format as `[{"text": "prompt"}]` for Converse API
+
 ## 📡 Context Status
 
 ### 🟢 Active

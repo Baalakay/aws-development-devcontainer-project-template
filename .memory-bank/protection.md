@@ -32,6 +32,13 @@
 - [C₂] **Data Processing**: S3 → Lambda → Step Functions → SQS pipeline
 - [C₃] **AI/ML Integration**: Bedrock service integration and LLM workflows
 
+### 🚨 CRITICAL - BEDROCK API USAGE
+- [C₄] **Bedrock Converse API**: MUST use `bedrock_runtime.converse()` method
+- [C₅] **Bedrock InvokeModel**: NEVER use `bedrock_runtime.invoke_model()` method
+- [C₆] **Model ID**: Use Claude 3.7 Sonnet v2: `us.anthropic.claude-3-7-sonnet-20250219-v1:0`
+- [C₇] **System Prompts**: Format as `[{"text": "system prompt"}]` for Converse API
+- [C₈] **API Reference**: Follow AWS documentation: https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-examples.html
+
 ## 📜 Protection History
 
 ### 2024-12-19

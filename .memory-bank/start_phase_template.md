@@ -100,6 +100,12 @@ This template ensures consistent initialization of AWS CDK projects and creates 
 - [ ] **Environment suffix**: Use `-{environment}` format?
 - [ ] **Specific models**: Which Bedrock models will be used?
 
+**🚨 CRITICAL BEDROCK RULES:**
+- [ ] **API Method**: MUST use `bedrock_runtime.converse()` (NOT `invoke_model`)
+- [ ] **Model ID**: Confirm Claude 3.7 Sonnet v2: `us.anthropic.claude-3-7-sonnet-20250219-v1:0`
+- [ ] **System Prompts**: Format as `[{"text": "system prompt"}]` for Converse API
+- [ ] **Documentation**: Reference AWS Converse API examples
+
 #### **SageMaker**
 - [ ] **Will SageMaker be used?** (Yes/No)
 - [ ] **If YES**: What base name for SageMaker resources? (Recommended: `{PROJECT_NAME}-ml`)
