@@ -1,4 +1,4 @@
-{
+{n  "name": "incident-extractor",
   "dependencies": {
     "aws-cdk": "^2.1024.0"
   }

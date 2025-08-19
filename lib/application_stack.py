@@ -13,7 +13,7 @@ from aws_cdk import (
     Duration,
     CfnOutput,
 )
-from constructs import Construct
+from constructs import Constructnfrom .config import PROJECT_NAME, ENVIRONMENT_CONFIGS
 
 class ApplicationStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, infrastructure_stack=None, environment='dev', **kwargs) -> None:
@@ -25,22 +25,22 @@ class ApplicationStack(Stack):
         # Environment-specific naming
         self.env_name = environment
         env_suffix = f"-{environment}" if environment != 'prod' else ""
-        self.base_name = "new-project"
+        self.base_name = PROJECT_NAME
         base_name = self.base_name  # Keep local variable for backward compatibility
         
         # Environment-specific configurations
-        if environment == 'dev':
-            timeout_seconds = 30  # Shorter timeouts for dev
-            memory_size = 256  # Less memory for dev
-            max_receive_count = 1  # Fewer retries for dev
-        elif environment == 'staging':
-            timeout_seconds = 60  # Medium timeouts for staging
-            memory_size = 512  # Medium memory for staging
-            max_receive_count = 2  # Medium retries for staging
-        else:  # prod
-            timeout_seconds = 300  # Full timeouts for production
-            memory_size = 1024  # Full memory for production
-            max_receive_count = 3  # Full retries for production
+        config = ENVIRONMENT_CONFIGS.get(environment, ENVIRONMENT_CONFIGS['dev'])
+        timeout_seconds = config['timeout_seconds']
+        memory_size = config['memory_size']
+        max_receive_count = config['max_receive_count']
+
+
+
+
+
+
+
+
 
         # Lambda Layers for shared dependencies
         self.bedrock_service_layer = lambda_.LayerVersion(

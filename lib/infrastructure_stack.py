@@ -10,7 +10,7 @@ from aws_cdk import (
     Duration,
     CfnOutput,
 )
-from constructs import Construct
+from constructs import Constructnfrom .config import PROJECT_NAME, ENVIRONMENT_CONFIGS
 
 class InfrastructureStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, environment='dev', **kwargs) -> None:
@@ -18,15 +18,14 @@ class InfrastructureStack(Stack):
         
         # Environment-specific naming
         env_suffix = f"-{environment}" if environment != 'prod' else ""
-        base_name = "new-project"
+        base_name = PROJECT_NAME
         
         # Environment-specific configurations
-        if environment == 'dev':
-            retention_days = 7  # Shorter retention for dev
-            public_access_blocked = False  # Easier debugging for development
-        elif environment == 'staging':
-            retention_days = 30  # Medium retention for staging
-            public_access_blocked = True
-        else:  # prod
-            retention_days = 365  # Full retention for production
-            public_access_blocked = True
+        config = ENVIRONMENT_CONFIGS.get(environment, ENVIRONMENT_CONFIGS['dev'])
+        retention_days = config['retention_days']
+        public_access_blocked = config['public_access_blocked']
+
+
+
+
+
