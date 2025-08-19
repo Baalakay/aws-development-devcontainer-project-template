@@ -25,7 +25,7 @@ class ApplicationStack(Stack):
         # Environment-specific naming
         self.env_name = environment
         env_suffix = f"-{environment}" if environment != 'prod' else ""
-        self.base_name = "jl-bat-loss-register"
+        self.base_name = "new-project"
         base_name = self.base_name  # Keep local variable for backward compatibility
         
         # Environment-specific configurations

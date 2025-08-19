@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import aws_cdk as cdk
 
-from lib.stages import LossRegisterStage
+from lib.stages import NewProjectStage
 
 
 app = cdk.App()
@@ -9,7 +9,7 @@ app = cdk.App()
 # Local stage removed - focusing on Dev environment deployment
 
 # Dev stage
-LossRegisterStage(
+NewProjectStage(
     app,
     "Dev",
     environment_name="dev",
@@ -17,7 +17,7 @@ LossRegisterStage(
 )
 
 # Staging stage - same account as dev but with staging environment names
-LossRegisterStage(
+NewProjectStage(
     app,
     "Staging",
     environment_name="staging",
@@ -25,7 +25,7 @@ LossRegisterStage(
 )
 
 # Prod stage (account to be provided later)
-# LossRegisterStage(
+# NewProjectStage(
 #     app,
 #     "Prod",
 #     environment_name="prod",

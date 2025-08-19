@@ -1,5 +1,0 @@
-# Bedrock service dependencies
-boto3
-botocore
-requests
-urllib3

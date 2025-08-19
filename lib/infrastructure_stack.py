@@ -18,7 +18,7 @@ class InfrastructureStack(Stack):
         
         # Environment-specific naming
         env_suffix = f"-{environment}" if environment != 'prod' else ""
-        base_name = "jl-bat-loss-register"
+        base_name = "new-project"
         
         # Environment-specific configurations
         if environment == 'dev':
